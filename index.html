@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dropdownbtn.css">
+    <link rel="stylesheet" href="css/switcher.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+
+    
+</head>
+<body>
+    <div class="control-block">
+        <section class="tools">
+            <button type="button" class="change-bg" style="background: url(assets/bg.png);background-size: contain;">
+                <img src="assets/change.svg">
+            </button>
+            <select class="droplist">
+                <option>en</option>
+                <option>ru</option>
+                <option>be</option>
+            </select>
+            <div class="box">
+                <input class="Switcher__checkbox sr-only" id="io" type="checkbox" checked="checked"/>
+                <label class="Switcher" for="io">
+                    <div class="Switcher__trigger" data-value="°F"></div>
+                    <div class="Switcher__trigger" data-value="°C"></div>
+                </label>
+            </div>
+        </section>
+        <section class="search">
+            <form action="search" class="form">
+                <input class="search-input" id="input_form" type="text" placeholder="Search city" autocomplete="off">
+                <span data-name="voice" class="voice-search">
+                    <img class="voice-icon" src="assets/micro.svg">
+                </span>
+                <button class="search-btn" >
+                    <span class="btn-text">Search</span>
+                </button>
+                
+            </form>
+        </section>
+    </div>
+    <div class="information-wrap">
+        <div class="weather-wrap">
+            <section class="location">
+                <h1 class="text-location"></h1>
+            </section>
+            <section class="time">
+                <span class="time-now"></span>
+            </section>
+            <section class="weather-now">
+                <div class="temperature"></div>
+                <div class="temperature-settings">
+                    <img class="weather-image">
+                    <span class="cloud-status"></span>
+                    <span class="feels-like"></span>
+                    <span class="wind"></span>
+                    <span class="humidity"></span>
+                </div>
+            </section>
+            <section class="weather-three-days">
+                <div class="day-one">
+                    <span class="day-name"></span>
+                    <span class="day-temperature"></span>
+                    <span class="day-cloud-status"></span>
+                </div>
+                <div class="day-two">
+                    <span class="day-name"></span>
+                    <span class="day-temperature"></span>
+                    <span class="day-cloud-status"></span>
+                </div>
+                <div class="day-three">
+                    <span class="day-name"></span>
+                    <span class="day-temperature"></span>
+                    <span class="day-cloud-status"></span>
+                </div>
+            </section>
+        </div>
+        
+        <div class="map-wrap">
+            <section class="map" id="map" style='width: 410px; height: 400px;'></section>
+        </div>
+    </div> 
+       
+        
+    
+    
+<script src="js/script.js"></script>   
+<script src="js/dropdownbtn.js"></script> 
+<script src="js/map.js"></script>
+</body>
+</html>
