@@ -1,0 +1,105 @@
+body {
+    background-color: tomato;
+}
+
+section {
+    background-color: rgba(0,0,0,.5);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.control-block, .information-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools, .weather-wrap {
+    width: 60%;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.change-bg, .droplist, .box {
+    margin-right: 20px;
+}
+
+.change-bg {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+    background-position: center;
+}
+
+.change-bg:hover {
+    border: 1px solid green;
+}
+
+.droplist{
+    height: 50px;  
+    outline: none;
+}
+
+.search {
+    width: 40%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.search-input {
+    padding: 15px 10px;
+    width: 300px;
+    border: none;
+    background-color: #00000000;
+    outline: none;
+    color: white;
+}
+
+.search-btn {
+    padding: 15px 10px;
+    margin: -3px 0 0 -5px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background: grey;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+}
+
+.search-btn:hover {
+    background: green;
+}
+
+.voice-search{
+    position: relative;
+    right: 15px;
+    top: 5px;
+}
+
+.form {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.map-wrap {
+    background-color: rgba(0,0,0,.5);
+    margin: 10px 20px;
+}
