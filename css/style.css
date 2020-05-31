@@ -45,7 +45,7 @@
   width: 100%;
   max-width: 1440px;
   min-width: 320px;
-  height: 100vh;
+  height: 100%;
   min-height: 800px;
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(8, 15, 26, 0.747) 0%, rgba(17, 17, 46, 0.671) 100%), url("../assets/images/bg.png");
