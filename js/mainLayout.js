@@ -360,7 +360,7 @@ const layout = [
     appendTo: 'map',
     attributes: {
       id: 'map',
-      style: 'width: 400px; height: 500px',
+      style: 'width: 90%; height: 500px; margin: 20px;',
     },
   },
   {
